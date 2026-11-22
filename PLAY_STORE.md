@@ -1,11 +1,11 @@
 # Publishing Sound Garden to Google Play
 
-The app is a PWA (installable, works offline) at https://lopa23.github.io/sound_garden/.
+The app is a PWA (installable, works offline) at https://liybrary.github.io/sound_garden/.
 It reaches Google Play as a **Trusted Web Activity (TWA)**: a small Android wrapper that opens the site full-screen.
 
 ## Done
 - [x] Web app manifest, icons (192, 512, maskable), offline service worker
-- [x] Privacy policy: https://lopa23.github.io/sound_garden/privacy.html (no data collected, no ads, no mic)
+- [x] Privacy policy: https://liybrary.github.io/sound_garden/privacy.html (no data collected, no ads, no mic)
 
 ## Steps
 
@@ -14,15 +14,15 @@ It reaches Google Play as a **Trusted Web Activity (TWA)**: a small Android wrap
    - New *personal* accounts must run a **closed test with at least 12 testers for 14 days** before they can publish to production. Line up 12 friends or family with Android phones.
 
 2. **Generate the Android package** at https://www.pwabuilder.com
-   - Enter `https://lopa23.github.io/sound_garden/`, then choose **Package for stores → Android**.
+   - Enter `https://liybrary.github.io/sound_garden/`, then choose **Package for stores → Android**.
    - Package ID: `io.github.lopa23.soundgarden`. App name: `Sound Garden`.
    - Download the zip. It contains the `.aab` (upload this to Play), the **signing key (`signing.keystore`) and its passwords**, and `assetlinks.json`.
    - **Back up the keystore and passwords somewhere safe.** Every future update must be signed with the same key.
 
 3. **Prove that you own the site (Digital Asset Links)**
-   - Android only hides the browser address bar if it finds `assetlinks.json` at the **domain root**: `https://lopa23.github.io/.well-known/assetlinks.json`.
-   - The app currently lives under `/sound_garden/`, so this needs a separate repo named **`lopa23.github.io`** containing `.well-known/assetlinks.json` (plus an empty `.nojekyll` file so GitHub serves the dot-folder).
-   - **Done 2026-11-13:** repo https://github.com/lopa23/lopa23.github.io (local copy: `Documents\lopa23.github.io`) serves an empty `[]` placeholder there. Replace it with the `assetlinks.json` from the PWABuilder zip and push.
+   - Android only hides the browser address bar if it finds `assetlinks.json` at the **domain root**: `https://liybrary.github.io/.well-known/assetlinks.json`.
+   - The app currently lives under `/sound_garden/`, so this needs a separate repo named **`LIYbrary.github.io`** in the LIYbrary org, containing `.well-known/assetlinks.json` (plus an empty `.nojekyll` file so GitHub serves the dot-folder).
+   - **Still to do:** repo https://github.com/LIYbrary/LIYbrary.github.io (local copy: `DocumentsLIYbrary-site`) does not have either file yet. Add the `assetlinks.json` from the PWABuilder zip and an empty `.nojekyll`, then push. (The placeholder in `lopa23.github.io` does not count for the new domain.)
    - After the first upload, add Google Play's **App signing key** SHA-256 fingerprint to that file as well (Play Console → Setup → App signing).
 
 4. **Fill in the Play Console** (you)
