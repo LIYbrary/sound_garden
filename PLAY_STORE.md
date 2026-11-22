@@ -22,7 +22,7 @@ It reaches Google Play as a **Trusted Web Activity (TWA)**: a small Android wrap
 3. **Prove that you own the site (Digital Asset Links)**
    - Android only hides the browser address bar if it finds `assetlinks.json` at the **domain root**: `https://liybrary.github.io/.well-known/assetlinks.json`.
    - The app currently lives under `/sound_garden/`, so this needs a separate repo named **`LIYbrary.github.io`** in the LIYbrary org, containing `.well-known/assetlinks.json` (plus an empty `.nojekyll` file so GitHub serves the dot-folder).
-   - **Still to do:** repo https://github.com/LIYbrary/LIYbrary.github.io (local copy: `DocumentsLIYbrary-site`) does not have either file yet. Add the `assetlinks.json` from the PWABuilder zip and an empty `.nojekyll`, then push. (The placeholder in `lopa23.github.io` does not count for the new domain.)
+   - **Still to do:** repo https://github.com/LIYbrary/LIYbrary.github.io (local copy: `Documentsiybrary-site`) does not have either file yet. Add the `assetlinks.json` from the PWABuilder zip and an empty `.nojekyll`, then push. (The placeholder in `lopa23.github.io` does not count for the new domain.)
    - After the first upload, add Google Play's **App signing key** SHA-256 fingerprint to that file as well (Play Console → Setup → App signing).
 
 4. **Fill in the Play Console** (you)
