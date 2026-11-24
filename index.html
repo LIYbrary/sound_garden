@@ -35,7 +35,7 @@ let stars=0;try{stars=+localStorage.getItem('sg-stars')||0}catch(e){}function ad
 let buildSeen=[];let tab=-1,voice=true,round=0,score=0,answered=false,buildParts=[];const tabs=['👀 Sound cards','👂 Hear & find','🧩 Build a word','📖 Read it!','🗣️ Say it!','🗂️ Sort it','🔤 Missing sound','🔍 Sound hunt'];
 // What the voice is given for each sound. Voices spell out anything they can't read ("shhh" comes out as "S H H H"),
 // so never use tripled letters or build these from the letters. Check a new spelling by ear, or by phonemes, before adding it.
-const SAY={sh:'shuh',ch:'chuh',th:'thuh',wh:'wuh',ph:'fuh',ck:'uck',ng:'ing',kn:'nuh',wr:'ruh',
+const SAY={sh:'shuh',ch:'chuh',th:'thuh',wh:'wuh',ph:'fuh',ck:'kuh',ng:'ing',kn:'nuh',wr:'ruh',
 bl:'bluh',cl:'cluh',fl:'fluh',gl:'gluh',pl:'pluh',sl:'sluh',
 br:'bruh',cr:'cruh',dr:'druh',fr:'fruh',gr:'gruh',tr:'truh',
 sk:'skuh',sm:'smuh',sn:'snuh',sp:'spuh',st:'stuh',sw:'swuh',
