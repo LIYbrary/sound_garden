@@ -22,11 +22,11 @@ Sound Garden is a free phonics app for children learning to read, with no ads, n
 It focuses on the sounds early readers find hardest: digraphs (sh, ch, th, wh, ph, ck, ng, kn, wr), consonant blends (bl, cl, fl, br, cr, tr, st, sn, sw and more), ending blends (nd, nk, mp, ft) and vowel teams (ee, ai, oa, ay, oo, ea).
 
 Eight short phonics games:
-• Sound cards: tap a digraph or blend to hear its sound and example words
+• Memory match: flip cards to match each picture with its word
 • Hear & find: listen to a sound and pick the letters that make it
 • Build a word: put the beginning and ending chunks together
 • Read it!: sound out a word and match it to its picture
-• Say it!: read words out loud and practise the tricky ones
+• Say it!: read words out loud and practice the tricky ones
 • Sort it: sort words by their sound
 • Missing sound: find the blend or digraph missing from a word
 • Sound hunt: find every word with the target sound in a sentence
